@@ -1,7 +1,7 @@
 {
-  "name": "jsonapi-live-parser",
+  "name": "jsonapi-online-parser",
   "version": "1.0.0",
-  "description": "JSON:API Live Parser",
+  "description": "JSON:API Online Parser",
   "author": "Yavisht Katgara",
   "private": true,
   "scripts": {
