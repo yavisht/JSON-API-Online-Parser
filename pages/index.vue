@@ -1,21 +1,10 @@
 <template>
   <div>
-    <b-jumbotron>
-      <template v-slot:header
-        >JSON:API Live Parser</template
-      >
-
-      <template v-slot:lead
-        >Paste a JSON:API response, we will parse it for you ;)</template
-      >
-
+    <b-jumbotron
+      :header="'JSON:API Live Parser'"
+      :lead="'Paste a JSON:API response, we will parse it for you ;)'"
+    >
       <hr class="my-4" />
-
-      <p>
-        It uses utility classes for typography and spacing to space content out
-        within the larger container.
-      </p>
-
       <b-button
         variant="success"
         href="https://github.com/yavisht/JSON-API-Online-Parser"
@@ -68,6 +57,7 @@
     </b-container>
   </div>
 </template>
+
 <script>
 import jsonapi from 'jsonapi-parse'
 import VueJsonPretty from 'vue-json-pretty'
@@ -94,6 +84,7 @@ export default {
   }
 }
 </script>
+
 <style lang="scss" scoped>
 .col {
   .btn {
