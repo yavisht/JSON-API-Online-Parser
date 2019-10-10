@@ -8,26 +8,13 @@
       <b-button
         variant="success"
         href="https://github.com/yavisht/JSON-API-Online-Parser"
-        >View on GitHub</b-button
-      >
+      >View on GitHub</b-button>
     </b-jumbotron>
     <b-container fluid>
       <b-row>
         <b-col>
-          <b-button
-            v-if="jsonRaw"
-            variant="primary"
-            href="#"
-            @click.prevent="parseData()"
-            >Do Something</b-button
-          >
-          <b-button
-            v-if="jsonParsed"
-            variant="danger"
-            href="#"
-            @click.prevent="reset()"
-            >Reset</b-button
-          >
+          <b-button v-if="jsonRaw" variant="primary" href="#" @click.prevent="parseData()">Parse it!</b-button>
+          <b-button v-if="jsonParsed" variant="danger" href="#" @click.prevent="reset()">Reset</b-button>
         </b-col>
       </b-row>
       <b-row>
